@@ -1,5 +1,6 @@
 -module(emurmur3).
 -export([init/0,hash_x86_32/2,hash_x86_128/2,hash_x64_128/2]).
+-on_load(init/0).
 
 init() ->
     NifName = "emurmur3_nif",
